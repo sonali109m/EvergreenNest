@@ -59,5 +59,6 @@ document.getElementById("confirmOrder").addEventListener("click", function () {
         top: 0,
         behavior: "smooth"
     });
+    document.getElementById("checkoutForm").reset();
 
 });

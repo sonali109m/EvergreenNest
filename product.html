@@ -22,7 +22,6 @@
                 <li><a href="index.html">Home </a></li>
                 <li><a href="./aboutUs.html" class="active">About Us </a></li>
                 <li><a href="./product.html">Products</a></li>
-                <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./contactus.html">Contact Us </a></li>
             </div>
             <a class="text-xl  text-yellow-100">EvergreenNest</a>
@@ -32,7 +31,6 @@
                 <li><a href="index.html" >Home </a></li>
                 <li><a href="./aboutUs.html" class="active">About Us </a></li>
                 <li><a href="./product.html">Products</a></li>
-                <li><a href="./blog.html">Blog</a></li>
                 <li><a href="./contactus.html">Contact Us </a></li>
             </ul>
         </div>
@@ -195,33 +193,12 @@
                     </button>
                 </div>
             </div>
-
-            <!-- Card 4 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition duration-300">
-                <img src="./clicks/gardeningtool4.avif"
-                     class="w-full h-52 object-cover"
-                     alt="Succulents">
-
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-3">BDT-3000tk.</h3>
-                    <p class="text-gray-600 mb-4">
-                        6 pcs Large Garden Tools Set Garden Tools
-                    </p>
-
-                    <button
-                        class="buy-btn bg-green-600 text-white px-5 py-2 rounded-lg hover:bg-green-700"
-                        data-name="Essential Gardening Equipment"
-                        data-price="BDT-3000"
-                        data-image="./clicks/gardeningtool4.avif">
-                        Buy Now
-                    </button>
-                </div>
             </div>
             <!-- checkout section -->
-             <section id="checkout" class="hidden max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-8 mt-10">
+             <section id="checkout" class="hidden max-w-5xl mx-auto bg-white shadow-lg rounded-xl p-8 mt-10">
 
                 <h2 class="text-3xl font-bold text-green-700 mb-6">
-                    Checkout
+                    Order
                 </h2>
                 <div class="flex gap-6 items-center">
                     <img id="checkoutImage"
@@ -233,21 +210,23 @@
                     </div>
                 </div>
                 <div class="mt-8">
-                    <input
-                        type="text"
-                        placeholder="Full Name"
-                        class="input input-bordered w-full mb-4">
-                    <input
-                        type="text"
-                        placeholder="Address"
-                        class="input input-bordered w-full mb-4">
-                    <input
-                        type="tel"
-                        placeholder="Phone Number"
-                        class="input input-bordered w-full mb-4">
-                    <button class="btn btn-success w-full">
-                        Confirm
-                    </button>
+                    <form id="checkoutForm">
+                        <input
+                            type="text"
+                            placeholder="Full Name"
+                            class="input input-bordered w-full mb-4">
+                        <input
+                            type="text"
+                            placeholder="Address"
+                            class="input input-bordered w-full mb-4">
+                        <input
+                            type="tel"
+                            placeholder="Phone Number"
+                            class="input input-bordered w-full mb-4">
+                        <button class="btn btn-success w-full">
+                            Confirm
+                        </button>
+                    </form>
 
                 </div>
                 
@@ -313,7 +292,6 @@
         <div>
             <h2 class="text-xl  text-white">Quick Links</h2>
             <a href="./aboutUs.html">About Us </a>
-            <a href="./blog.html">Blog</a>
             <a href="./contactus.html">Contact Us </a>
             <p class="mt-2 text-sm font-mono bg-green-700 bg-opacity-20 px-4 py-1 rounded">
                 Current Time: <span id="live-datetime">Loading...</span>
