@@ -9,39 +9,42 @@
 </head>
 <body>
     <header>
-            <!-- Navber starts here -->
-        <nav class="navbar bg-base-100 shadow-sm">
-        <div class="navbar-start">
-            <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
-            </div>
-            <ul
-                tabindex="-1"
-                class="menu menu-sm dropdown-content bg-gray-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                <li><a href="index.html">Home </a></li>
-                <li><a href="./aboutUs.html">About Us </a></li>
-                <li><a href="./ourproducts.html">Our Products</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contactus.html">Contact Us </a></li>
-            </div>
-            <a class="btn btn-ghost text-xl">EvergreenNest</a>
-        </div>
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a href="index.html">Home </a></li>
-                <li><a href="./aboutUs.html">About Us </a></li>
-                <li><a href="./ourproducts.html">Our Products</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contactus.html">Contact Us </a></li>
-            </ul>
-        </div>
-        <div class="navbar-end">
-            <button class="btn btn-active btn-primary">Button</button>
-        </div>
-        </nav>
-    </header>
         <!-- navigation ends here -->
+        <nav class="navbar bg-base-100 shadow-sm  bg-green-700 text-yellow-50">
+            <div class="navbar-start">
+                <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                </div>
+                <ul
+                    tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-gray-100 rounded-box z-1 mt-3 w-52 p-2 shadow /;">
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="./aboutUs.html">About Us </a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contactus.html">Contact Us </a></li>
+                </div>
+                <a href="index.html" class="text-xl  text-yellow-100">EvergreenNest</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 ;">
+                    <li><a href="index.html" class="active">Home </a></li>
+                    <li><a href="./aboutUs.html">About Us </a></li>
+                    <li><a href="./product.html">Products</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contactus.html">Contact Us </a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn bg-white text-black border-[#e5e5e5]">
+                <svg aria-label="Google logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="m0 0H512V512H0" fill="#fff"></path><path fill="#34a853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341"></path><path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"></path><path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path><path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path></g></svg>
+                Sign in
+                </button>
+            </div>
+        </nav>
+        <!-- navigation ends here -->
+    </header>    
     <section>
         <div class="flex w-full flex-col">
             <div class="card bg-base-300 rounded-box grid h-20 place-items-center text-blue-600">
@@ -68,11 +71,7 @@
                     viewBox="0 0 24 24"
                     class="fill-current">
                     <path
-                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 
-                        1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 
-                        2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 
-                        2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695
-                         1.797-1.562 2.457-2.549z"></path>
+                        d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
                     </svg>
                 </a>
                 <a>
@@ -83,8 +82,7 @@
                     viewBox="0 0 24 24"
                     class="fill-current">
                     <path
-                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0
-                         3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
                     </svg>
                 </a>
                 <a>
@@ -102,11 +100,11 @@
             </nav>
         </aside>
         <div>
-            <h2 class="text-xl  text-white">Our Products</h2>
-            <a href="./indoorPlants.html">Indoor Plants </a>
-            <a href="./outdoorPlants.html">Outdoor Plants </a>
-            <a href="./floweringplants.html">Flowering Plants </a>
-            <a href="./gardeningtools.html">Gadening Tools </a>
+            <h2 class="text-xl  text-white">Products</h2>
+            <a href="./product.html">Indoor Plants </a>
+            <a href="./product.html">Outdoor Plants </a>
+            <a href="./product.html">Flowering Plants </a>
+            <a href="./product.html">Gadening Tools </a>
         </div>
         <div>
             <h2 class="text-xl  text-white">Quick Links</h2>
@@ -118,6 +116,6 @@
             </p>
         </div>
     </footer>
-    <script src=""></script>
+    <script src="./script.js"></script>
 </body>
 </html>
