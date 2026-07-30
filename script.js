@@ -62,3 +62,94 @@ document.getElementById("confirmOrder").addEventListener("click", function () {
     document.getElementById("checkoutForm").reset();
 
 });
+// form validation
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function (e) {
+
+        e.preventDefault();
+
+        // Input fields
+        const name = document.getElementById("name");
+        const email = document.getElementById("email");
+        const phone = document.getElementById("phone");
+        const subject = document.getElementById("subject");
+        const message = document.getElementById("message");
+
+        // Error fields
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+        const phoneError = document.getElementById("phoneError");
+        const subjectError = document.getElementById("subjectError");
+        const messageError = document.getElementById("messageError");
+        const successMessage = document.getElementById("successMessage");
+
+        // Clear previous errors
+        nameError.textContent = "";
+        emailError.textContent = "";
+        phoneError.textContent = "";
+        subjectError.textContent = "";
+        messageError.textContent = "";
+        successMessage.textContent = "";
+
+        let valid = true;
+
+        // Name
+        if (name.value.trim() === "") {
+            nameError.textContent = "Please enter your name.";
+            valid = false;
+        }
+
+        // Email
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (email.value.trim() === "") {
+            emailError.textContent = "Please enter your email.";
+            valid = false;
+        } else if (!emailPattern.test(email.value.trim())) {
+            emailError.textContent = "Please enter a valid email.";
+            valid = false;
+        }
+
+        // Phone (10-15 digits)
+        const phonePattern = /^[0-9]{10,15}$/;
+
+        if (phone.value.trim() === "") {
+            phoneError.textContent = "Please enter your phone number.";
+            valid = false;
+        } else if (!phonePattern.test(phone.value.trim())) {
+            phoneError.textContent = "Phone number must contain 10-15 digits.";
+            valid = false;
+        }
+
+        // Subject
+        if (subject.value.trim() === "") {
+            subjectError.textContent = "Please enter a subject.";
+            valid = false;
+        }
+
+        // Message
+        if (message.value.trim() === "") {
+            messageError.textContent = "Please enter your message.";
+            valid = false;
+        }
+
+        // Success
+        if (valid) {
+
+            successMessage.innerHTML = "✅ Your message has been sent successfully!";
+
+            // Clear all fields
+            contactForm.reset();
+
+            // Remove success message after 3 seconds
+            setTimeout(() => {
+                successMessage.textContent = "";
+            }, 3000);
+        }
+
+    });
+
+}
